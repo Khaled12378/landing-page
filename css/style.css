@@ -1,0 +1,17 @@
+.container .bg{
+    height: 800px;
+    width: 100vw;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.container .img img{
+    height: 800px;
+   position: absolute;
+    left: 0;
+    top: 0; 
+    width: 50vw;
+    z-index: 44;
+}

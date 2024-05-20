@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar and Form Example</title>
+    <!-- رابط Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- رابط Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Logo</a>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- الصورة -->
+            <div class="col-md-6">
+                <img src="./img/6001399.jpg" class="img-fluid" alt="صورة توضيحية">
+            </div>
+            <!-- النموذج -->
+            <div class="col-md-6">
+                <h2>Transform Your Future: Unlock Your Creative Potential with Eureka Academy!</h1>
+                    <h5>Master the Art of Creative Marketing: Elevate Your Skills with Expert-Led Courses at Eureka Academy!
+                    </h5>
+                <form>
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="number" class="form-control" id="number" placeholder="Enter your number">
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال</button>
+                </form>
+                <h6>We'll never share your info with anyone.</h6>
+            </div>
+        </div>
+    </div>
+    <!-- التذييل -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">معلومات عنا</h5>
+                    <p>هنا يمكنك إضافة بعض المعلومات عن شركتك أو موقعك.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">تواصل معنا</h5>
+                    <a href="https://www.facebook.com/profile.php?id=61559257651998"  target="_blank" class="btn btn-outline-primary btn-floating m-1" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/eurekaacademy12?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="  target="_blank" class="btn btn-outline-danger btn-floating m-1" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com"  target="_blank" class="btn btn-outline-info btn-floating m-1" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 حقوق النشر:
+            <a class="text-dark" href="#">اسم شركتك</a>
+        </div>
+    </footer>
+    <!-- تضمين Bootstrap JS وأدواته التابعة (مثل jQuery و Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
