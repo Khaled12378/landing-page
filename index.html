@@ -28,16 +28,16 @@
                 <h2>Transform Your Future: Unlock Your Creative Potential with Eureka Academy!</h1>
                     <h5>Master the Art of Creative Marketing: Elevate Your Skills with Expert-Led Courses at Eureka Academy!
                     </h5>
-                <form>
+                <form id="sheetForm">
                     <div class="form-group">
                         <label for="name">الاسم</label>
                         <input type="text" class="form-control" id="name" placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="email">البريد الإلكتروني</label>
-                        <input type="number" class="form-control" id="number" placeholder="Enter your number">
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">إرسال</button>
+                    <button type="submit">Submit</button>
                 </form>
                 <h6>We'll never share your info with anyone.</h6>
             </div>
@@ -74,5 +74,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('sheetForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    
+    var data = {
+        name: name,
+        email: email
+    };
+    
+    fetch('https://script.google.com/macros/s/AKfycbw1oGZp5KlEdVLPH4pM374CRl3m_652O68RHlQ1exGWUZUeqYf36wpAZ6h-sVIis4xQ/exec', {
+        method: 'POST',
+        body: JSON.stringify(data)
+    }).then(response => response.json()).then(data => {
+        if (data.result === "success") {
+            alert("Data submitted successfully!");
+        } else {
+            alert("Error submitting data!");
+        }
+    }).catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+    </script>
 </body>
 </html>
